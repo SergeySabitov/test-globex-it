@@ -1,0 +1,52 @@
+@import "../scss-Export.scss";
+
+.user_container {
+  text-align: start;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  box-shadow: 0px 4px 10px 4px #9a8f7f1f;
+  margin: 0.4rem;
+  width: 12rem;
+  height: 10rem;
+  animation: appear 300ms ease-out 1;
+  transition: all 0.2s;
+  &:hover {
+    box-shadow: 0px 4px 10px 4px #8c00ff3c;
+  }
+  h3 {
+    font-size: 0.8rem;
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.6rem;
+    color: $gray-color;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    .icon {
+      font-size: 0.8rem;
+      color: $icon-color;
+      padding-right: 0.3rem;
+    }
+
+    .email {
+      text-decoration: underline;
+      color: $gray-color;
+    }
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0.3;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
